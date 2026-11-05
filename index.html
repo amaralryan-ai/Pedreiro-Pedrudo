@@ -5,20 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio Digital - Pedreiro | Feira de Profissões</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <header>
-        <div class="container">
-            <h1>Profissão: Pedreiro</h1>
-            <p class="slogan">"Fundando bases sólidas e construindo o futuro da sociedade."</p>
+        <div class="header-overlay"></div>
+        <div class="container header-content">
+            <span class="badge">Feira de Profissões • Portfólio Oficial</span>
+            <h1>CONSTRUÇÃO CIVIL & ENGENHARIA DA BASE</h1>
+            <p class="slogan">"Erguendo as fundações do presente, moldando as estruturas do amanhã."</p>
         </div>
     </header>
 
-    <nav>
-        <div class="container">
+    <nav id="navbar">
+        <div class="container nav-container">
+            <div class="logo">BUILD<span>SIGMA</span></div>
             <ul>
-                <li><a href="#home">Apresentação</a></li>
+                <li><a href="#home" class="active">Apresentação</a></li>
                 <li><a href="#historico">Fatos Históricos</a></li>
                 <li><a href="#mercado">Panorama & Mercado</a></li>
                 <li><a href="#ambiente">Ambiente & Balanço</a></li>
@@ -28,79 +32,121 @@
 
     <main class="container">
         <!-- Apresentação (Home) -->
-        <section id="home">
-            <h2>Apresentação da Profissão</h2>
-            <article>
-                <h3>Visão Geral e Atribuições</h3>
-                <p>O pedreiro é o profissional essencial da construção civil, responsável por erguer as fundações, paredes, estruturas de alvenaria e dar acabamento às edificações. Sua rotina envolve a interpretação de projetos e plantas, o preparo de argamassas e concretos, e o assentamento de tijolos, blocos, pisos e revestimentos.</p>
-                <p>A importância dessa carreira para a sociedade é inestimável: são os pedreiros que transformam projetos arquitetônicos e estruturais em realidade palpável, construindo as moradias, escolas, hospitais e infraestruturas onde a vida em comunidade acontece.</p>
-            </article>
+        <section id="home" class="glass-card">
+            <div class="section-header">
+                <h2>01. Apresentação da Profissão</h2>
+                <div class="line-accent"></div>
+            </div>
+            
+            <div class="grid-2col">
+                <article>
+                    <h3>Visão Geral e Atribuições</h3>
+                    <p>O <strong>pedreiro</strong> é o profissional mestre na execução da alvenaria e construção civil, atuando na linha de frente do desenvolvimento urbano e da infraestrutura humana.</p>
+                    <p>Sua rotina técnica envolve a leitura precisa de projetos arquitetônicos e estruturais, nivelamento, cálculo de dosagem de argamassas e concretos, além do assentamento rigoroso de tijolos, blocos, estruturas de vedação, pisos e revestimentos finos.</p>
+                    <p>A importância dessa carreira para a sociedade é absoluta: sem a maestria e o rigor técnico do pedreiro, os desenhos de engenheiros e arquitetos jamais ganhariam corpo e segurança física.</p>
+                </article>
+                <div class="media-container">
+                    <img src="https://images.unsplash.com/photo-1541888946425-d0fbb186a5b3?auto=format&fit=crop&w=800&q=80" alt="Pedreiro em canteiro de obras trabalhando com alvenaria" loading="lazy">
+                    <div class="media-caption">Mão de obra especializada no canteiro de obras contemporâneo.</div>
+                </div>
+            </div>
         </section>
 
         <!-- Fatos Históricos -->
-        <section id="historico">
-            <h2>Fatos Históricos e Evolução</h2>
-            <article>
-                <p>A profissão de pedreiro é uma das mais antigas da história da humanidade, surgindo no momento em que as primeiras civilizações deixaram o nomadismo para construir abrigos permanentes de pedra, barro e tijolos rústicos na Antiguidade.</p>
-                <p>Ao longo dos séculos, a área passou por grandes transformações históricas e tecnológicas:</p>
-                <ul>
-                    <li><strong>Antiguidade e Idade Média:</strong> Grandes construções históricas (como as pirâmides do Egito e as catedrais medievais) foram erguidas por mestres pedreiros utilizando técnicas empíricas e ferramentas manuais.</li>
-                    <li><strong>Revolução Industrial:</strong> O surgimento do cimento Portland e do ferro revolucionou a construção civil, permitindo a criação do concreto armado e edifícios mais altos e seguros.</li>
-                    <li><strong>Era Moderna e Contemporânea:</strong> Integração com tecnologias de prumo a laser, equipamentos de proteção individual (EPIs), materiais pré-fabricados e normas técnicas de segurança e sustentabilidade.</li>
-                </ul>
-            </article>
+        <section id="historico" class="glass-card">
+            <div class="section-header">
+                <h2>02. Fatos Históricos e Evolução</h2>
+                <div class="line-accent"></div>
+            </div>
+
+            <div class="grid-2col">
+                <div class="media-container">
+                    <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80" alt="Construção histórica e estrutura de pedra" loading="lazy">
+                    <div class="media-caption">A alvenaria como arte e ciência ao longo das Eras da Humanidade.</div>
+                </div>
+                <article>
+                    <p>A profissão de pedreiro é uma das pedras angulares da civilização. O surgimento da profissão marca a transição do ser humano de nômade para sedentarizado, dando início às primeiras vilas e cidades da Mesopotâmia e Egito Antigo.</p>
+                    
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <h4>Antiguidade & Idade Média</h4>
+                            <p>Construções em pedra e barro. Surgimento das corporações de ofício de construtores de catedrais e fortificações.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h4>Revolução Industrial</h4>
+                            <p>Patente do Cimento Portland e advento do concreto armado, permitindo a verticalização das metrópoles.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h4>Era Digital & Construtech</h4>
+                            <p>Uso de prumos e níveis a laser, impressoras 3D de concreto, normas rígidas de segurança (EPIs) e materiais ecológicos.</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
         </section>
 
         <!-- Panorama Atual e Mercado -->
-        <section id="mercado">
-            <h2>Panorama Atual e Mercado</h2>
-            <p>Confira a síntese dos dados estatísticos e remuneração da profissão no Brasil e no mundo:</p>
+        <section id="mercado" class="glass-card">
+            <div class="section-header">
+                <h2>03. Panorama Atual e Mercado</h2>
+                <div class="line-accent"></div>
+            </div>
             
+            <p class="section-intro">Indicadores de empregabilidade, faixas salariais e tendências globais para o setor:</p>
+
             <div class="cards-grid">
-                <div class="card">
-                    <h3>Média Salarial (Brasil)</h3>
-                    <div class="stat-highlight">R$ 2.500 - R$ 4.500</div>
-                    <p>Varia de acordo com a região, nível de experiência e contratação (CLT ou empreitada/autônomo).</p>
+                <div class="stat-card">
+                    <span class="card-tag">Brasil</span>
+                    <h3>Média Salarial</h3>
+                    <div class="stat-highlight">R$ 2.500 - R$ 5.000+</div>
+                    <p>Variando por especialização (Mestre de Obras, Azulejista) e modelo de contrato (CLT ou empreitada autônoma).</p>
                 </div>
                 
-                <div class="card">
-                    <h3>Mercado Internacional</h3>
-                    <div class="stat-highlight">US$ 3.000 - US$ 5.000/mês</div>
-                    <p>Em países como EUA e Canadá ou na Europa, profissionais qualificados possuem alta demanda e boa valorização salarial.</p>
+                <div class="stat-card">
+                    <span class="card-tag">Internacional</span>
+                    <h3>Mercado Global</h3>
+                    <div class="stat-highlight">US$ 3.500 - US$ 6.000</div>
+                    <p>Alta demanda e valorização acelerada em países da América do Norte e Europa devido ao déficit de profissionais qualificados.</p>
                 </div>
 
-                <div class="card">
+                <div class="stat-card">
+                    <span class="card-tag">Setores</span>
                     <h3>Áreas de Atuação</h3>
-                    <p>Construção residencial, obras comerciais, obras públicas de infraestrutura, reformas e restauração histórica.</p>
+                    <div class="stat-highlight">Construção & Reforma</div>
+                    <p>Obras residenciais, comerciais, grandes obras públicas de infraestrutura e restauração de patrimônio histórico.</p>
                 </div>
             </div>
         </section>
 
         <!-- Ambiente de Trabalho e Balanço -->
-        <section id="ambiente">
-            <h2>Ambiente de Trabalho e Balanço da Carreira</h2>
-            <p>O trabalho do pedreiro exige resistência física, atenção aos detalhes e capacidade de trabalhar ao ar livre ou em canteiros de obras dinâmicos.</p>
-            
-            <div class="table-container">
+        <section id="ambiente" class="glass-card">
+            <div class="section-header">
+                <h2>04. Ambiente de Trabalho & Análise Crítica</h2>
+                <div class="line-accent"></div>
+            </div>
+
+            <p class="section-intro">Uma visão objetiva sobre os aspectos práticos da rotina no canteiro de obras:</p>
+
+            <div class="table-wrapper">
                 <table>
                     <thead>
                         <tr>
-                            <th>Pontos Positivos</th>
-                            <th>Desafios e Lados Negativos</th>
+                            <th>Vantagens & Lados Positivos</th>
+                            <th>Desafios & Pontos de Atenção</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Alta demanda constante no mercado de trabalho.</td>
-                            <td>Esforço físico intenso diário.</td>
+                            <td><span class="badge-positive">✓</span> Demanda constante e alta empregabilidade no setor imobiliário.</td>
+                            <td><span class="badge-negative">✕</span> Exigência de esforço físico contínuo e resistência técnica.</td>
                         </tr>
                         <tr>
-                            <td>Possibilidade de atuar de forma autônoma/empreendedora.</td>
-                            <td>Exposição a intempéries (sol, chuva, poeira).</td>
+                            <td><span class="badge-positive">✓</span> Autonomia para empreender, gerenciar equipe e trabalhar por conta própria.</td>
+                            <td><span class="badge-negative">✕</span> Exposição frequente a intempéries climáticas (sol, chuva, poeira).</td>
                         </tr>
                         <tr>
-                            <td>Satisfação ao ver o resultado concreto da obra pronta.</td>
-                            <td>Risco de acidentes caso os EPIs não sejam utilizados.</td>
+                            <td><span class="badge-positive">✓</span> Realização profissional visível ao entregar edifícios e moradias prontas.</td>
+                            <td><span class="badge-negative">✕</span> Necessidade rigorosa de conformidade com normas de segurança (EPIs).</td>
                         </tr>
                     </tbody>
                 </table>
@@ -109,10 +155,14 @@
     </main>
 
     <footer>
-        <div class="container">
-            <p>Desenvolvido por: <strong>Seu Nome Completo</strong> | Turma: <strong>Sua Turma</strong></p>
-            <p>Disciplina: <strong>História / Matemática / Sociologia / Geografia</strong> | Registro Oficial do Stand</p>
-            <p><a href="#" id="backToTop">Voltar ao Topo ↑</a></p>
+        <div class="container footer-content">
+            <div class="credits">
+                <p>Desenvolvido por: <strong>Seu Nome Completo</strong></p>
+                <p>Turma: <strong>Sua Turma</strong> | Disciplinas: <strong>História • Matemática • Sociologia • Geografia</strong></p>
+            </div>
+            <div class="footer-actions">
+                <a href="#" id="backToTop" class="btn-top">Voltar ao Topo ↑</a>
+            </div>
         </div>
     </footer>
 
